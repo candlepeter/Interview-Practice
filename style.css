@@ -1,0 +1,256 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  padding: 1em;
+}
+
+.section-left,
+.section-right {
+  min-width: 50%;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #42a7c3;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  margin: 1em 0 0 1em;
+}
+
+.input-container > *:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+.input-container {
+  font-family: "Lato", sans-serif;
+  width: 60%;
+  margin-inline: auto;
+  margin-block: 2em;
+}
+
+.input-container > div {
+  margin-bottom: 1em;
+  display: flex;
+}
+
+.label-right {
+  margin-left: auto;
+  font-size: 0.7em;
+  color: #42a7c3;
+  margin-top: 0.5em;
+}
+
+.form > *:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+fieldset {
+  outline: 0;
+  border: 0;
+  /* width: 100%; */
+}
+
+#email,
+#password {
+  padding: 0.5em;
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+  font-size: 0.7em;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  width: 100%;
+  border: 1px solid #d0d0d0;
+  background-color: #d0d0d0;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.input-container > p {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.input-container p span {
+  color: #42a7c3;
+}
+
+.input-container div hr {
+  width: 35%;
+  height: 0;
+  border: 0.5px solid #d0d0d0;
+}
+
+.input-container div span {
+  color: #d0d0d0;
+  font-size: 0.7em;
+}
+
+.input-container .social-site {
+  display: grid;
+  width: 100%;
+}
+
+.social-site > * {
+  display: flex;
+  padding: 0.5em 1em;
+  border: 1px solid #d0d0d0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #0a0a0a;
+}
+
+.social-site a span {
+  margin-left: 0.5em;
+  font-size: 0.7em;
+}
+
+.social-site > *:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+.footer > * {
+  font-size: 0.7em;
+  color: #d0d0d0;
+}
+
+.section-right {
+  border-radius: 10px;
+  padding: 2.5em 1.5em;
+  background: linear-gradient(135deg, #42a7c3, #2e79bf);
+}
+
+.circle-container {
+  position: relative;
+}
+
+.circle-container > * {
+  position: absolute;
+  top: 18em;
+  left: -14em;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2em solid rgba(255, 255, 255, 0.219);
+}
+
+.circle-1 {
+  width: 20em;
+  height: 20em;
+}
+
+.circle-2 {
+  width: 20em;
+  height: 20em;
+  transform: scale(1.4);
+}
+
+.circle-3 {
+  width: 20em;
+  height: 20em;
+  transform: scale(1.9);
+}
+
+.text-image-wrapper {
+  padding: 1.5em;
+  height: 100%;
+  backdrop-filter: blur(5px) saturate(80%);
+  background-color: rgba(255, 255, 255, 0.233);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.text-image-wrapper > p {
+  color: #fdfdfd;
+  font-size: 1.5em;
+}
+
+.bg {
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
